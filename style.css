@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+    background: #f7f9fa;
+    overflow-y: scroll;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.inner{
+    height: 100vh;
+    display: flex;
+    margin-top: -130px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.my-4{
+   
+    text-align: left;
+    margin-top: -1%;
+    margin-left: 73%
+}
+
+img{
+    height: 100px;
+}
+
+.fb-div{
+    margin-top: 70px;
+    position: relative;
+    top: 200px;
+    left: 55px;
+    width: 500px;
+    align-content: center;
+}
+
+.fb-div div{
+    padding: 0 40px;
+}
+
+.fb-div p{
+    font-size: 30px;
+    margin: 0 !important;
+}
+.card{
+    padding: 20px;
+    padding-left: 800px;
+    margin: 0;
+    background: #f7f9fa;
+    border:0;
+}
+
+form{
+  padding: 1em;
+  margin: 5%;
+  text-align: center;
+  width: fit-content;
+}
+
+
+
+.input-group{
+    height: 50px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+}
+
+.input input{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: 
+    0 0 0 2px #e2e8ee,
+    0 0 2px #fff,
+    3px 3px 2px inset rgba(153, 153, 153, 0.4),
+    -4px -4px 9px inset #ffffff;
+    border-radius: 5px;
+    padding: 0 8px;
+    height: 35px;
+    color: #555;
+}
+
+#hr1{
+    display: none;
+}
+
+#hr2{
+    margin-top: 0px;
+}
+#forgetPass2{
+    display: none;
+}
+
+#createAcBtn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.mobile-version-footer{
+    display: none;
+}
+
+
+@media screen and (max-width:767px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+    .inner {
+        display: block;
+    }
+    
+    .input-group{
+        width: auto !important;
+        padding: 0 auto;
+    }
+
+    .fb-div {
+        margin-bottom: auto;
+        position: relative;
+        top: 40px;
+        left: 55px;
+        width: auto;
+        align-content: center;
+    }
+    
+    .fb-div h1{
+        font-size: 5px;
+    }
+    .fb-div p{
+        font-size:medium;
+    }
+    .card{
+        /* width: 500px; */
+        width: 300px;
+        height: auto;
+        border: 8px !important;
+        margin: 40px auto 0;
+        padding: 40px 20px;
+        box-shadow: 0 0 8px rgba(192, 188, 188, 0.527);
+        background-color: white;
+        margin-bottom: 4%;
+    }
+
+    .label{
+        display: none;
+    }
+
+    .my-4{
+        text-align: left;
+        margin-top: -1%;
+        margin-left: 20%
+    }
+}
+
+@media (min-width: 767px) {
+    .left-items-start {
+      -webkit-box-align: start !important;
+          -ms-flex-align: start !important;
+              align-items: flex-start !important;
+    }
+    .width-58 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      width: 58.3333333333%;
+    }
+    .width-42 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      width: 41.6666666667%;
+    }
+    .block {
+      display: block !important;
+    }
+}
+
+  @media screen and (max-width:480px){
+
+    body {
+        font-size: 12px;
+        height: 100vh;
+        width: 100vw;
+        /* overflow-y: scroll; */
+    }
+
+    #forgetPass1{
+        display: none;
+    }
+    #hr2{
+        display: none;
+    }
+    #hr1{
+        display: block;
+        margin-top: 20px;
+    }
+    #hr1::before{
+        position: absolute;
+        content: "or";
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: -12px;
+        background: #fff;
+        padding: 0 10px;
+        color: #333;
+    }
+    #forgetPass2{
+        display: block;
+        font-size: 20px;
+    }
+    #forgetPass2 a{
+        color: rgba(0, 68, 255, 0.6);
+    }
+    #form-footer{
+        display: none;
+    }
+    .mobile-version-footer{
+        display: block;
+        margin-top: 30px;
+    }
+    .language p{
+        text-align: center;
+        margin: 0;
+        color: rgba(0, 68, 255, 0.6);
+    }
+
+}
+
+  
